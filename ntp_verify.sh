@@ -1,12 +1,11 @@
-#!/bin/bash
+!/bin/bash
 
 
-
-if [ `ps cax | grep ntpd | wc -l` -eq 0 ]
+if 	! ps cax | grep -q ntpd
 	
 	then
 	echo -e "\nNOTICE: ntp is not running"
-	sudo service ntp start
+	sudo systemctl start ntp
 
 fi
 
