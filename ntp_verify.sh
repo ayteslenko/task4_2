@@ -1,4 +1,4 @@
-!/bin/bash
+!#/bin/bash
 
 
 if 	! ps cax | grep -q ntpd
